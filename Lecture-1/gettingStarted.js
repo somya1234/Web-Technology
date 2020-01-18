@@ -7,3 +7,9 @@ console.log(arr[6]);
 console.log(arr[6]());
 console.log(arr[5][2]);
 
+for(var key in arr){
+    console.log(key+":"+arr.key);
+}
+arr[1075]="jkws"
+console.log()
+arr["some value"]="Wdlwwj"
