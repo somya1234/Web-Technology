@@ -1,7 +1,19 @@
 const getRawWeather = require("../utilities/getRawWeather");
+const getLocation = require("../utilities/getLocation");
+const ora = require("ora");
 
 module.exports = async function(location){
+    const spinner = ora('Loading unicorns');
+    setTimeout(()=>{
+        spinner.text="Loading.....",
+        spinner.color="blue"
+    })
+    spinner.start();
+    if(location==undefined){
+        location = await getLocation();
+    }
     const fullWeather = await getRawWeather(location);
+    spinner.stop();
     console.log("Forecast for "+location+" : ");
     for(let i=0; i<fullWeather.length; i++){
         const cDate = fullWeather[i]["applicable_date"];

@@ -15,6 +15,7 @@ module.exports = async function getWeather(cityName){
         return ManyDaysWeather;
     } catch(err){
         console.log("Some error occured.");
+        return "Some error occured.";
     }
 };
 
