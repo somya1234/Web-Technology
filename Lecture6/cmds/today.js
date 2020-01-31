@@ -1,4 +1,4 @@
-const getRawWeather = require("../utilities/getRawLocation");
+const getRawWeather = require("../utilities/getRawWeather");
 module.exports = async function(location){
     const fullWeather = await getRawWeather(location);
     // 5 days weather
