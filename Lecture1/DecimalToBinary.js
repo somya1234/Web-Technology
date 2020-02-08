@@ -9,5 +9,6 @@ while(dec!=0){
 }
 return bin;
 }
+
 var newBin = dec2Bin(13);
 console.log(newBin)
