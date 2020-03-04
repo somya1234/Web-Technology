@@ -7,7 +7,7 @@ initialTasks = JSON.parse()
 
 button.addEventListener("click", function(){
     if(input.value==""){
-        alert("Beta kuch to likh.");
+        alert("Beta kuch to likh...");
         return;
     }
     const val = input.value;
